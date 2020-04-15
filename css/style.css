@@ -10,7 +10,7 @@
     padding-left: 2.5rem;
 }
 .colRight{
-    padding: 0rem;
+    padding: 0.2rem;
     text-align: right;
 }
 .head{
@@ -32,4 +32,11 @@ nav.navbar{
 }
 a.dd{
     color: aliceblue !important;
+}
+
+.foot{
+    background: linear-gradient(to right,#651a1a,#d04949,#651a1a);
+    color: aliceblue;
+    margin: auto;
+    padding: 1rem;
 }
