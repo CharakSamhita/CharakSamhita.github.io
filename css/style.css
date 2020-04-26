@@ -44,3 +44,12 @@
     margin: auto;
     padding: 1rem;
 }
+
+.pComp{
+    text-align: center;
+    color: darkblue;
+}
+
+#hidden{
+    display: none;
+}

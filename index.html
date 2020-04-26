@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
       <link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+      <script src="css/resources/file.js"></script>
 
     <title>CHARAK</title>
   </head> 
@@ -317,70 +318,152 @@
                         <div class="col">
                             <div class="col">
             <label class="">System</label>
-      <select id="inputState" class="form-control">
+      <select id="iSystem" class="form-control" onchange="dOpt()">
           
-        <option selected>Digestive 
+        <option value="Digestive">Digestive 
           </option>
-        <option>Respiratory</option>
-        <option>Cardiovascular</option>
-        <option>Nervous</option>
-        <option>Endocrine</option>
-        <option>Musculoskeletal</option>
-        <option>Gynacological</option>
-        <option>Skin</option>
-        <option>Sexual</option>
-        <option >Other</option>
+        <option value="Respiratory">Respiratory</option>
+        <option value="Cardiovascular">Cardiovascular</option>
+        <option value="Nervous">Nervous</option>
+        <option value="Endocrine">Endocrine</option>
+        <option value="Musculoskeletal">Musculoskeletal</option>
+        <option value="Gynacological">Gynacological</option>
+        <option value="Skin">Skin</option>
+        <option value="Sexual">Sexual</option>
+        <option value="other">Other</option>
       </select>
     </div></div>
+<!--                        symptom-->
                         <div class="col"><div class="col">
             <label class="">Symptom</label>
-      <select id="inputState" class="form-control">
+<!--                         digestive   -->
+      <select id="iSymptom" class="form-control">
           
-        <option selected></option>
-        <option></option>
-        <option></option>
+        <option selected value="Nausea">Nausea</option>
+        <option value="Vometing">Vometing</option>
+        <option value="Pain in Abdomen">Pain in Abdomen</option>
+        <option value="Sour Belching">Sour Belching</option>
+        <option value="Chest Burning">Chest Burning</option>
+        <option value="Colicky pain">Colicky pain</option>
+        <option value="Dull pain">Dull pain</option>
+        <option value="Hard Stool">Hard Stool</option>
+        <option value="Flatus">Flatus</option>
+        <option value="Distended abdomen">Distended abdomen</option>
+        <option value="Stool with mucus">Stool with mucus</option>
+        <option value="Stool with Blood stain">Stool with Blood stain</option>
+        <option value="Stool with Blood and Mucus">Stool with Blood and Mucus</option>
+        <option value="Dark Brown Stool">Dark Brown Stool</option>
+        <option value="Low Apetite">Low Apetite</option>
+        <option value="Anorexia">Anorexia</option>
+        <option value="Pain with vometing">Pain with vometing</option>
+        <option value="Watery stool">Watery stool</option>
+        <option value="Watery stool">Pain in apigastric region</option>
+        <option value="Watery stool">Pain in right Hypocondric</option>
+        <option value="Watery stool">Pain in left hypocondric</option>
+        <option value="Watery stool">Pain in navel region</option>
+        <option value="Watery stool">Pain in right lateral</option>
+        <option value="Watery stool">Pain in left lateral</option>
+        <option value="Watery stool">Pain in Pubic region</option>
+        <option value="Watery stool">Pain in right illiac region</option>
+        <option value="Watery stool">Pain in left illiac</option>
       </select>
     </div></div>
+<!--                   Respiratory     -->
+                        
+                        <div class="col" id="hidden"><div class="col">
+            <label class="">Symptom</label>
+<!--                            -->
+      <select id="iSymptom" class="form-control">
+          
+        <option selected value="Nausea">Sneezing</option>
+        <option value="Vometing">Running Nose</option>
+        <option value="Pain in Abdomen">Nazal Blockage</option>
+        <option value="Sour Belching">Sour Belching</option>
+        <option value="Chest Burning">Chest Burning</option>
+        <option value="Colicky pain">Colicky pain</option>
+        <option value="Dull pain">Dull pain</option>
+        <option value="Hard Stool">Hard Stool</option>
+        <option value="Flatus">Flatus</option>
+        <option value="Distended abdomen">Distended abdomen</option>
+        <option value="Stool with mucus">Stool with mucus</option>
+        <option value="Stool with Blood stain">Stool with Blood stain</option>
+        <option value="Stool with Blood and Mucus">Stool with Blood and Mucus</option>
+        <option value="Dark Brown Stool">Dark Brown Stool</option>
+        <option value="Low Apetite">Low Apetite</option>
+        <option value="Anorexia">Anorexia</option>
+        <option value="Pain with vometing">Pain with vometing</option>
+        <option value="Watery stool">Watery stool</option>
+        <option value="Watery stool">Pain in apigastric region</option>
+        <option value="Watery stool">Pain in right Hypocondric</option>
+        <option value="Watery stool">Pain in left hypocondric</option>
+        <option value="Watery stool">Pain in navel region</option>
+        <option value="Watery stool">Pain in right lateral</option>
+        <option value="Watery stool">Pain in left lateral</option>
+        <option value="Watery stool">Pain in Pubic region</option>
+        <option value="Watery stool">Pain in right illiac region</option>
+        <option value="Watery stool">Pain in left illiac</option>
+      </select>
+    </div></div>
+<!--                        other-->
+                       
+                        
+                        
                         
                         
                          <div class="col">
                              <div class="row">
                                 <div class="col"><label class="">Input</label>
-                                    <select id="inputState" class="form-control">
+                                    <select id="iInput" class="form-control">
           
-        <option selected>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
       </select>
                                  </div>
 
                              
                              <div class="col">
             <label class="">Duration</label>
-      <select id="inputState" class="form-control">
+      <select id="iDuration" class="form-control">
           
-        <option selected>Days</option>
-        <option>Week</option>
-        <option>Months</option>
-        <option>Year</option>
-        <option>Decade</option>
+        <option selected value="Days">Days</option>
+        <option value="Weeks">Week</option>
+        <option value="Months">Months</option>
+        <option value="Years">Year</option>
+        <option value="Decade">Decade</option>
       </select>
     </div></div></div>
-                        <button class="btn-primary btn-lg btn">Add </button>
+                        <button class="btn-primary btn-lg btn" onclick="dAdd()">Add </button>
                     
                     </div>
               
               </div>
+              
               </div>
+              <div class="row other">
+                <div class="col-4" id="rOther">
+                  
+                  </div>
+              </div>
+              <div class="row pComp">
+                    <div class="col-3" id="System"></div>
+                    <div class="col-5" id="Symptom"></div>
+                    
+                    <div class="col-1" id="Input"></div>
+                    <div class="col-3" id="Duration"></div>
+                  
+              </div>
+              
+              
               <hr>
           <div class="row">
                 <div class="col-12 provDiag">
